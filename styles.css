@@ -1,0 +1,87 @@
+:root{
+    --baackground-color: #103713;
+    --primary-color: #628b35;
+    --secondary-color: #e2dbd0;
+    --text-color: #fffdf5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--baackground-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+#change-due{
+    color: #fff;
+    font-weight: bolder;
+    font-size: large;
+}
+
+input{
+    height: 28px;
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--baackground-color);
+    border-color: #628b35;
+    border-radius: 4px;
+}
+
+.cash-register{
+    width: 250px;
+    background-color: var(--primary-color);
+    padding: 0 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.total-price{
+    background-color: black;
+    height: 26px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.total-price > p{
+    margin: 0;
+    padding: 4px;
+}
+
+.change-drawer{
+    width: 194px;
+    background-color: var(--secondary-color);
+    color: var(--baackground-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.change-drawer > p{
+    margin: 0;
+}
